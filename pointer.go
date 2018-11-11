@@ -38,9 +38,9 @@ func Restore(ptr unsafe.Pointer) (v interface{}) {
 		return nil
 	}
 
-	mutex.Lock()
+	//mutex.Lock()
 	v = store[ptr]
-	mutex.Unlock()
+	//mutex.Unlock()
 	return
 }
 
